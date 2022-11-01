@@ -1,7 +1,13 @@
+@import 'assets/scss/mixins';
+
 .bannerContainer {
     width: 45%;
     margin-top: 7rem;
     margin-bottom: 5rem;
+
+    @include medium-screens {
+        width: 100%;
+    }
     .headerText {
         font-size: 3.5rem;
         font-weight: bold;

@@ -1,12 +1,24 @@
 @import "assets/scss/variables";
+@import "assets/scss/mixins";
 
 .wrapper {
   display: flex;
   margin-bottom: 14rem;
 
+  @include medium-screens {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
   .imageWrapper {
     width: 50%;
     padding-right: 3rem;
+    @include medium-screens {
+      width: 70%;
+      margin-top: 3rem;
+    }
+    
     img {
       width: 100%;
     }
@@ -14,6 +26,10 @@
 
   .betterPayment {
     width: 50%;
+
+    @include medium-screens {
+      width: 100%;
+    }
 
     .heading {
       line-height: 1.25;

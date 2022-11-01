@@ -14,7 +14,7 @@ const ReadyTrial = () => {
         <div className={styles.headerText}>
           Start accepting <HighlightText text="payments" /> in minutes
         </div>
-        <div>
+        <div className={styles.createBtn}>
           <Button buttonText="Create a free Account" padding="1rem 2rem" />
         </div>
       </div>

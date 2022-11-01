@@ -1,11 +1,15 @@
 @import "assets/scss/variables";
+@import "assets/scss/mixins";
 
 .wrapper {
     margin-bottom: 14rem;
 
     .trusted {
         width: 55%;
-        // margin-top: 1rem;
+        @include medium-screens {
+            width: 80%;
+            margin-bottom: 1.5rem;
+        }
     }
 
     .supportList {
@@ -13,6 +17,11 @@
         gap: 1rem;
         margin-top: 3rem;
         font-size: 0.9rem;
+
+        @include medium-screens {
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+        }
 
         .listHeading {
             font-weight: bold;
