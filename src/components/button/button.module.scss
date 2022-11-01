@@ -1,0 +1,9 @@
+@import "assets/scss/variables";
+
+.btn {
+    background-color: $btn_primary;
+    color: $text_white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

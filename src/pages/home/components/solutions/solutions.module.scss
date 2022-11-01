@@ -1,0 +1,50 @@
+@import "assets/scss/variables";
+
+.wrapper {
+  display: flex;
+  margin-bottom: 14rem;
+
+  .imageWrapper {
+    width: 50%;
+    padding-right: 3rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .betterPayment {
+    width: 50%;
+
+    .heading {
+      line-height: 1.25;
+    }
+    .listWrapper {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      .leftList {
+        width: 50%;
+      }
+      .rightList {
+        width: 50%;
+      }
+    }
+    .createAccount {
+      color: $text_blue;
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      cursor: pointer;
+      .text {
+          margin-right: 0.5rem;
+          border-bottom: 1px solid $text_blue;
+      }
+  }
+  }
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,49 @@
+@import "assets/scss/variables";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14rem;
+  .featureText {
+    padding-right: 5rem;
+    width: 50%;
+
+    .learnMore {
+        color: $text_blue;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        cursor: pointer;
+        .text {
+            margin-right: 0.5rem;
+            border-bottom: 1px solid $text_blue;
+        }
+    }
+  }
+
+  .imageWrapper {
+    position: relative;
+    .image {
+      width: 20rem;
+      height: 15rem;
+    }
+    .copyLink {
+        position: absolute;
+        padding: 0.1rem 1rem;
+        font-size: 0.8rem;
+        background-color: $bg_white;
+        top: 50%;
+        left: -30%;
+        transform: translate(0%,-50%);
+        border-top: 1px solid $border_gray;
+        border-bottom: 1px solid $border_gray;
+        
+
+        .linkText {
+            margin-right: 2rem;
+            border-bottom: 1px solid #2d4875;
+            color: #2d4875;
+        }
+    }
+  }
+}

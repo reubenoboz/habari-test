@@ -1,0 +1,30 @@
+@import "assets/scss/variables";
+
+
+.wrapper {
+    color: $text_gray;
+    margin-top: 3rem;
+    margin-bottom: 14rem;
+    .listContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 4rem;
+        .listItem {
+            display: flex;
+            width: 25%;
+            .itemIcon {
+                padding-right: 2rem;
+            }
+            .itemheading {
+                font-weight: bold;
+                color: $text_primary
+            }
+        }
+    }
+    .feesRange {
+        font-size: 0.9rem;
+        text-align: center;
+        
+    }
+}
